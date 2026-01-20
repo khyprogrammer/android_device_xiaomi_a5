@@ -15,10 +15,10 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Inherit from missi device
 $(call inherit-product, device/xiaomi/missi/device.mk)
 
-PRODUCT_DEVICE := missi
-PRODUCT_NAME := omni_missi
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := missi
+PRODUCT_DEVICE := a5
+PRODUCT_NAME := omni_a5
+PRODUCT_BRAND := xiaomi
+PRODUCT_MODEL := Redmi A5
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
