@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_DEVICE := a5
-PRODUCT_NAME := omni_a5
+PRODUCT_NAME := twrp_a5
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi A5
 PRODUCT_MANUFACTURER := xiaomi
