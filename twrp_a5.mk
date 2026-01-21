@@ -1,6 +1,7 @@
 # Inherit from the modern core 64-bit configurations
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64bit.mk)
 
 # If core_64bit.mk is failing, use this modern alternative:
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
