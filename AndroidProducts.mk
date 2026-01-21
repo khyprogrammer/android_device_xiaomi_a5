@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_a5.mk
+    $(LOCAL_DIR)/twrp_a5.mk
 
 COMMON_LUNCH_CHOICES := \
     omni_a5-eng \
