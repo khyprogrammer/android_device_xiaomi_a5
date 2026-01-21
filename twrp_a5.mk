@@ -2,13 +2,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit PBRP Configuration
-$(call inherit-product, vendor/pbrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/a5/device.mk)
 
 # Inherit PitchBlack Recovery Project configuration
-$(call inherit-product, vendor/pbrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # PitchBlack Flags
 PB_RECOVERY_DEVICE := a5
