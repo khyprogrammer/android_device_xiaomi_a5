@@ -27,3 +27,30 @@ TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_DEVICE_VERSION := 1.0_Khy
 TARGET_RECOVERY_FSTAB := device/xiaomi/a5/recovery.fstab
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := generic
+
+TARGET_USES_64_BIT_BINDER := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := a5
+
+# Partition Info
+BOARD_FLASH_BLOCK_SIZE := 131072
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864 # 64MB - Adjust to your stock size
+BOARD_HAS_LARGE_FILESYSTEM := true
+BOARD_SUPPORTS_VBOOT := true
+
+# Dynamic Partitions
+BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9126805504 # Adjust to your stock super size
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor
+
+# Platform
+TARGET_BOARD_PLATFORM := sharkl5pro
+TARGET_BOOTLOADER_BOARD_NAME := a5
