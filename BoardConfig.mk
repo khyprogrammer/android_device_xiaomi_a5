@@ -26,3 +26,4 @@ AB_OTA_UPDATER := true
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_DEVICE_VERSION := 1.0_Khy
+TARGET_RECOVERY_FSTAB := device/xiaomi/a5/recovery.fstab
