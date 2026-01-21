@@ -17,8 +17,8 @@ PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # OrangeFox Recovery Flags
-export FOX_VERSION := R11.1
-export FOX_BUILD_TYPE := Unofficial
-export FOX_RECOVERY_INSTALL_PARTITION := /dev/block/by-name/vendor_boot
-export FOX_AB_DEVICE := 1
-export FOX_VIRTUAL_AB_DEVICE := 1
+ FOX_VERSION := R11.1
+ FOX_BUILD_TYPE := Unofficial
+ FOX_RECOVERY_INSTALL_PARTITION := /dev/block/by-name/vendor_boot
+ FOX_AB_DEVICE := 1
+ FOX_VIRTUAL_AB_DEVICE := 1
