@@ -102,3 +102,5 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_EDL_MODE := true
+
+TARGET_RECOVERY_FSTAB := device/xiaomi/a5/recovery.fstab
