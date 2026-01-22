@@ -1,18 +1,13 @@
-# mount point   fstype  device                 device2                        flags
+# Logical partitions
+system          ext4    ro                                      wait,logical
+vendor          ext4    ro                                      wait,logical
+product         ext4    ro                                      wait,logical
 
-/boot           emmc    /dev/block/by-name/boot
-/cache          ext4    /dev/block/by-name/cache
-/recovery       emmc    /dev/block/by-name/recovery                          flags=backup=1
-/system_root    ext4    /dev/block/by-name/system                            flags=display="System"
-/system_ext     ext4    /dev/block/by-name/system_ext                        flags=display="System_Ext";backup=1
-/vendor         ext4    /dev/block/by-name/vendor                            flags=display="Vendor";backup=1
-/product        ext4    /dev/block/by-name/product                           flags=display="Product";backup=1
-/data           ext4    /dev/block/by-name/userdata                          flags=fileencryption=aes-256-xts
-/metadata       ext4    /dev/block/by-name/metadata                          flags=display="Metadata"
-/dtbo           emmc    /dev/block/by-name/dtbo                              flags=display="DTBO";backup=1;flashimg=1
-/vbmeta         emmc    /dev/block/by-name/vbmeta                            flags=display="VBMeta";backup=1;flashimg=1
-/vbmeta_system  emmc    /dev/block/by-name/vbmeta_system                     flags=backup=1;flashimg=1
+# Userdata
+/data           f2fs    noatime,nosuid,nodev,discard            wait,check,encryptable=footer
 
-# Removable storage
-/sdcard1        vfat    /dev/block/mmcblk1p1   /dev/block/mmcblk1            flags=display="MicroSD";storage;wipeingui;removable
-/usb_otg        vfat    /dev/block/sdg1        /dev/block/sdg                flags=display="USB-OTG";storage;wipeingui;removable
+# Metadata (required for dynamic partitions)
+/metadata       ext4    noatime,nosuid,nodev                    wait
+
+# Cache (only if exists on your device)
+/cache          ext4    noatime,nosuid,nodev                    wait
