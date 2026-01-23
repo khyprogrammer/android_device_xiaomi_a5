@@ -1,11 +1,11 @@
 # Release name
-# Inherit common PBRP configuration
+# Inherit common TWRP configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit your device configuration
 $(call inherit-product, device/xiaomi/a5/device.mk)
 
-PRODUCT_NAME := pbrp_a5
+PRODUCT_NAME := twrp_a5
 PRODUCT_DEVICE := a5
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi A5
