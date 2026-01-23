@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pbrp_a5.mk
+    $(LOCAL_DIR)/twrp_a5.mk
 
 COMMON_LUNCH_CHOICES := \
-    pbrp_a5-eng \
-    pbrp_a5-user \
-    pbrp_a5-userdebug
+    twrp_a5-eng \
+    twrp_a5-user \
+    twrp_a5-userdebug
