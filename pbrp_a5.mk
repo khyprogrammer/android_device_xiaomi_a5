@@ -1,21 +1,14 @@
 # Release name
-PRODUCT_RELEASE_NAME := a5
-
-# Inherit from those products
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-
-# Inherit some common PBRP stuff
+# Inherit common PBRP configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
-# Inherit device configuration
+# Inherit your device configuration
 $(call inherit-product, device/xiaomi/a5/device.mk)
 
-# Device identifier
-PRODUCT_DEVICE := a5
 PRODUCT_NAME := pbrp_a5
+PRODUCT_DEVICE := a5
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi A5
+PRODUCT_MODEL := Xiaomi A5
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Build fingerprint
