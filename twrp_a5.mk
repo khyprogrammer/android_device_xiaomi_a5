@@ -1,6 +1,5 @@
-# Release name
 # Inherit common TWRP configuration
-$(call inherit-product, vendor/pb/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit your device configuration
 $(call inherit-product, device/xiaomi/a5/device.mk)
