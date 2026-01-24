@@ -50,13 +50,19 @@ TW_INCLUDE_LIBRESETPROP := true
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
-# Architecture
+# Primary architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_VARIANT := cortex-a55
+TARGET_CPU_ABI := arm64-v8a
 
+# Secondary architecture (32-bit support for Android Go)
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_VARIANT := cortex-a55
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+
+
 
 
