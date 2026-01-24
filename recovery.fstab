@@ -1,7 +1,25 @@
-# Android fstab file for TWRP
-#<src>  <mnt_point>  <type>  <mnt_flags>  <fs_mgr_flags>
-/dev/block/by-name/boot  /boot  emmc  defaults  defaults
-system  /system  erofs  defaults  defaults
-system  /system  ext4  defaults  defaults
-/dev/block/by-name/userdata  /data  f2fs  defaults  defaults
-/dev/block/by-name/rescue  /cache  ext4  defaults  defaults
+# recovery.fstab for Xiaomi Redmi A5 (Unisoc, Android Go)
+
+# <src>                <mnt_point>  <type>  <mnt_flags>         <fs_mgr_flags>
+
+# Boot partition
+/dev/block/by-name/boot        /boot       emmc    defaults        defaults
+
+# Recovery partition
+/dev/block/by-name/recovery    /recovery   emmc    defaults        defaults
+
+# System partition
+/dev/block/by-name/system      /system     ext4    ro              wait,slotselect
+
+# Vendor partition
+/dev/block/by-name/vendor      /vendor     ext4    ro              wait,slotselect
+
+# Data partition (with encryption support)
+#/dev/block/by-name/userdata   /data       f2fs    noatime,nosuid,nodev,barrier=1,discard   wait,check,quota,formattable,encryptable=footer
+/dev/block/by-name/userdata    /data       ext4    noatime,nosuid,nodev,barrier=1,discard   wait,check,quota,formattable,encryptable=footer
+
+# Cache partition (optional, some Unisoc devices omit this)
+#/dev/block/by-name/cache      /cache      ext4    defaults        wait,check,formattable
+
+# Metadata partition (needed for FBE)
+#/dev/block/by-name/metadata   /metadata   ext4    defaults        wait,check,formattable
