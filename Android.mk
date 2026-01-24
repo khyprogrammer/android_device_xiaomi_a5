@@ -1,11 +1,5 @@
-#
-# Copyright (C) 2026 The Android Open Source Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-LOCAL_PATH := $(call my-dir)
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/twrp_a5.mk
 
-ifeq ($(TARGET_DEVICE),vendor_boot)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-endif
+
 
