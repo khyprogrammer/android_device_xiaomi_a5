@@ -63,6 +63,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 
+# Disable 64-bit app support (Android Go device)
+TARGET_SUPPORTS_64_BIT_APPS := false
+
 
 
 
