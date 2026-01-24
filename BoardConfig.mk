@@ -3,7 +3,11 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-DEVICE_PATH := device/generic/vendor_boot
+DEVICE_PATH := device/xiaomi/a5
+
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -67,3 +71,4 @@ PLATFORM_VERSION := 16.1.0
 # Allow 64-bit apps 
 TARGET_SUPPORTS_64_BIT_APPS := true 
 TARGET_SUPPORTS_32_BIT_APPS := true
+
