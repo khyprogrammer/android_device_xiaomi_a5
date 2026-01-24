@@ -58,10 +58,11 @@ TARGET_CPU_ABI := arm64-v8a
 
 # Secondary architecture (32-bit support for Android Go)
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT :=  armv8-2a
 TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
+
 
 
 
