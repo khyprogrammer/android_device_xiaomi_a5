@@ -17,7 +17,7 @@ TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_KERNEL_IMAGE_NAME := kernel
 
 # Recovery image settings
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864   # 64 MB
+BOARD_RECOVERY IMAGE_PARTITION_SIZE := 67108864   # 64 MB
 BOARD_FLASH_BLOCK_SIZE := 131072                # (block size * pagesize)
 
 # File system support
@@ -65,6 +65,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 
 # Disable 64-bit app support (Android Go device)
 TARGET_SUPPORTS_64_BIT_APPS := false
+
+# Vendor image output path
+TARGET_COPY_OUT_VENDOR := vendor
 
 
 
