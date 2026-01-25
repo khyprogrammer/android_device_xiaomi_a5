@@ -71,16 +71,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_SUPPORTS_64_BIT_APPS := false
 
 # Vendor image output path
-TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_VENDOR := vendor 
 
-# Maximum brightness value for the panel
+# Brightness settings 
+TW_DEFAULT_BRIGHTNESS := 120
 TW_MAX_BRIGHTNESS := 255
-
-
-
-
-
-
-
-
-
