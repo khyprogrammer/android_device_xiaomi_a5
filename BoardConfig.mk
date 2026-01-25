@@ -73,6 +73,7 @@ TARGET_SUPPORTS_64_BIT_APPS := false
 # Vendor image output path
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Maximum brightness value for the panel TW_MAX_BRIGHTNESS := 255
 
 
 
