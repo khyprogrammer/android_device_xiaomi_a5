@@ -4,10 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_a5.mk
+    $(LOCAL_DIR)/omni_a5.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_a5-user \
-    twrp_a5-userdebug \
-    twrp_a5-eng
+    omni_a5-user \
+    omni_a5-userdebug \
+    omni_a5-eng
+
 
